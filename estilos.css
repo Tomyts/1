@@ -14,7 +14,7 @@ header{
 	padding: 10px;
 	border: 1px solid black;
 	border-radius: 10px;
-	background-image: url("img/fondo-de-header2.jpg");
+	background-image: url("img/fondo-de-header3.jpg");
 	}
 
 #nombre{
@@ -23,26 +23,53 @@ header{
 	display: flex;
 	
 }
+.imagenp {
+	display: flex;
+	height:auto;
+	}
+
+.principal{
+	display:flex;
+	width: 100%;
+	heig: auto;
+	padding-top: 10px;
+	border-color: aquamarine;
+	}
+.general{
+	border: #C01417;
+	align-content: center;
+}
+.principal P{
+	display: flex;
+	margin: 10px;
+	width: 50%
+}
+.principal h3{
+	display: flex;
+	margin: 10px;
+	}
 ♠.rotulo{
-	mrotuloleft: 20px;
+	left: 20px;
 	padding: 20px;
-		
+	width: 25%;
+			
 }
 img{
 	border-radius: 10px;
 	display: flex;
 	border:1px solid #4169e1;
-	margin-right: 10px;
+	margin-right: 0px;
 		
 	
 }
 body{
-	background: linear-gradient( 0deg,#008080, #FFEBCD);
+	background: linear-gradient( 0deg,#008080, #FFFFFF);
 }
 .navegador{
 	display: flex;
-	justify-content:space-around;
 	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content:center;
 }
 
 .botonera{
@@ -51,6 +78,7 @@ body{
 	font-size:1em;
 	align-items: center;
 	display: flex;
+	padding-right: 5px;
 	
 	
 }
@@ -76,103 +104,83 @@ nav ul li{
 	color: #fff;
 	background-color: #000;
 }
+
 .retorno {
-	margin-left: 3px
-}
-.principal
-{
-	display: flex;
-	width: 100%;
-	padding-top: 10px;
-	align-content: center;
-
-	
-		
-}
-.principal P
-{
-	display: flex;
-	margin: 10px;
-	
-}
-.principal h3
-{
-	display: flex;
-	margin: 10px;
+	margin-left: 5px;
 	
 }
 
-.columnas{
-		display: flex;
-		margin: 10px;
-}
 
 .container{
-  margin: auto;
-  width: 800px;
-  padding: 15px;
+	margin: auto;
+	width: 800px;
+	padding: 15px;
 }
 
 ul, li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 ul.slider{
-  position: relative;
-  width: 800px;
-  height: 300px;
+	position: relative;
+	width: 800px;
+	height: 300px;
 }
 
 ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	transition: opacity .5s;
 
 }
 
 ul.slider li img{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
 }
 
 ul.slider li:first-child {
-    opacity: 1;
+	opacity: 1;
 }
 
 ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+	opacity: 1;
 }
 
 .menu{
-  text-align: center;
-  margin: 0px;
+	text-align: center;
+	margin: 0px;
 }
 
 .menu li{
-  display: inline-block;
-  text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 
 .menu li a{
-  display: inline-block;
-  color:#9FCCED;
-  text-decoration: none;
-  background-color:#060606;
-  padding:10 px;
-  width: 20px;
-  height:20px;
-  font-size: 12px;
-  border-radius: 100%;
-margin-bottom: 10px;
+	display: inline-block;
+	color:#9FCCED;
+	text-decoration: none;
+	background-color:#060606;
+	padding:10 px;
+	width: 20px;
+	height:20px;
+	font-size: 12px;
+	border-radius: 100%;
+	margin-bottom: 10px;
 }
 
+.columnas{
+	display: flex;
+	margin: 10px;
+}
 .col{
 	width: 100%;
 	border:solid #4169e1 0.5px;
@@ -184,13 +192,15 @@ margin-bottom: 10px;
 	align-items: center;
 	color:#4169e1;
 	font-style: italic;
+	opacity: .8;
 }
 .video{
 	display: flex;
 	align: center;
 	flex-direction: column;
 	align-items: center;
-	position: relative
+	padding-bottom: 10px;
+	
 }
 .segundocontenedor{
 	border: 1px solid black;
@@ -219,32 +229,44 @@ form {
 	padding: 5px;
 	color:#4169e1;
 }
+form div {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex: wrap;
+}
 .formulario{
 	align-items: center;
 }
 
 
 aside {
-	background-color: #F9F6D4;
 	position: relative;
 	border-radius: 10px;
-	
+	min-width: 150px;
+	padding-bottom: 20px;
 }
 .contacto{
 	border: 1px solid black;
-	background-color: #000;
+	background-color:#174094;
 	color:white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 5px;
+	border-radius: 15px;
+	opacity: .6;
+}
+.contacto ul li{
+	align-content: center;
+	padding-bottom: 20px;
+	
 }
 .redes{
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
+	position: sticky;
 }
-
 @media screen and (max-widht: 600px){
 	body{font-size: 1.3;
 }
