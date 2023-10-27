@@ -335,19 +335,24 @@ footer{
 	.container {
 		flex-direction: column;
 		}
-	
+}
 	main{
 		flex-direction: column;
+		}
+	ul.slider li img {
+		position: relative;
+		width: 69%;
+		height: 285px;
+		display: flex;
 	}
 	ul.slider li img {
-	position: relative;
-	width: 69%;
-	height: 285px;
-	display: flex;
-}
+		width: 67%;
+		height: 300px;
+		object-fit: cover;
+	}
 	.container {
-margin: auto;
-width: 600px;
-padding: 7px;
-	}
-	}
+		margin: auto;
+		width: 600px;
+		padding: 7px;
+
+		}
